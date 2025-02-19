@@ -13,25 +13,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="dark-background text-center">
+    <div class="bg-container text-center d-flex flex-column justify-content-center">
+        <h1 class="counter-heading">Counter</h1>
+        <p class="counter-value" id="value">0</p>
         <div>
-            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png" class="bulb-image"
-                id="bulb" />
-        </div>
-        <div>
-            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png" id="cat"
-                class="cat-image" />
-        </div>
-        <div class="d-flex flex-row justify-content-center pt-5">
-            <div class="switch-board">
-                <h1 class="switch-status" id="status">Switched On</h1>
-                <button class="off-switch" id="swichoff" onclick="off()">OFF</button>
-                <button class="on-switch" id="swichon" onclick="on()">ON</button>
-            </div>
+            <button class="button" onclick="decerease()">DECREASE</button>
+            <button class="button" onclick="reset()">RESET</button>
+            <button class="button" onclick="increase()">INCREASE</button>
         </div>
     </div>
     <script src="script.js"></script>
