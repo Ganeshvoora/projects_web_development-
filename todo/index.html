@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTodos</title>
+    <meta author="Voora Venkata Sai Ganesh">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <h1 class="font-bold text-3xl"><span class="text-red-700">Your</span><span
+                    class="text-green-900">Todos</span>
+            </h1>
+            <div class="input">
+                <input class="bg-white focus:border-stone-900  rounded-6xl p-3 block" type="text" id="input"
+                ondragend="additem()" placeholder="Add a new todo" />
+                <p class="text-[#b1b0b0] px-3">click "Add" or select and drag to add</p>
+                <button class="bg-green-500 p-2 rounded-xl w-20 self-center m-3 mx-[40px]"
+                onclick="additem()">Add</button>
+            </div>
+        </div>
+        <div class="todolist">
+            <h1 class="font-bold text-3xl"><span class="text-red-700">Your</span><span
+                class="text-green-900">Todos</span><span class> List</span></h1>
+                <ul id="todoListItems">
+                    
+                </ul>
+                
+            </div>
+            <div>
+                <button class="bg-blue-500 p-2 rounded-xl w-20 self-center m-3 mx-[40px]" id="saveButton" onclick="saveItems()">Save</button>
+                
+                
+            </div>
+            
+        </div>
+    
+    </body>
+
+    </html>
+    

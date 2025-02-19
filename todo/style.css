@@ -1,0 +1,43 @@
+.body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: max(50px, 5%);
+    min-height: 100vh;
+}
+.input{
+    margin: 5vw;
+}
+.input input{
+    width: max(280px,60%);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+ul{
+    list-style-type: none;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    width: max(350px,80%);
+    /* max-width: 80%; */
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.delete-btn{
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.checked{
+    text-decoration: line-through;
+    color: #888;
+}
